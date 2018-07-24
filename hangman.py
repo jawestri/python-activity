@@ -73,10 +73,10 @@ def hangman_visual(num_wrong):
             
 #setup
 print("Welcome to Hangman!")
-print("The words 5 letter and you get 6 wrong choices")
+print("The word is 5 letters and you get 6 wrong choices")
 print("\n\n~~Starting Game~~\n")
 user_guess = []
-word_list=["phone","quick","water","bravo","table","micro","cable","giant","power"]
+word_list=["phone","quick","water","bravo","table","micro","cable","giant","power","laser","video"]
 word = random.choice(word_list)
 
 blanks = "_" * 5
