@@ -73,7 +73,7 @@ print("The word is 5 letters and you get 6 wrong choices")
 print("\n\n~~Starting Game~~\n")
 USERGUESS = []
 WORDLIST = ["phone", "quick", "water", "bravo", "table", "micro",
-             "cable", "giant", "power", "laser", "video"]
+            "cable", "giant", "power", "laser", "video"]
 WORD = random.choice(WORDLIST)
 
 BLANKS = "_" * 5
@@ -118,4 +118,4 @@ while WIN is not True and LOSE is not True:
         print("The word was %s" % WORD)
         LOSE = True
 
-        
+       
