@@ -67,6 +67,7 @@ def hangman_visual(wrong):
         print ("   / \ |")
         print ("       |")
         print (" -------")
+
 # setup
 print("Welcome to Hangman!")
 print("The word is 5 letters and you get 6 wrong choices")
@@ -103,12 +104,14 @@ while WIN is not True and LOSE is not True:
         if WRONG is True:
             NUMWRONG += 1
             print("letter not in word")
+
 # displaying hangman and progess of user
     COUNT += 1
     hangman_visual(NUMWRONG)
     print ("{:^30s}".format(' '.join(BLANKSLIST)))
     print("\n--------------------------------------------------------------\n")
     USERGUESS.append(GUESS)
+
 # all blanks have been filled=user wins
     if BLANKSLEFT == 0:
         WIN = True
