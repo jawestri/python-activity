@@ -5,6 +5,7 @@ cache: pip
 before_script: 
     - easy_install distribute  
     - pip install -r requirements.txt  
-    - pip install pep8
+    - pip install pycodestyle
 script:
+    - pycodestyle hangman.py
     - python hangman.py < guess.txt
