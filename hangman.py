@@ -88,6 +88,7 @@ LOSE = False
 NUMWRONG = 0
 while WIN is not True and LOSE is not True:
     GUESS = input('Enter 1 letter:')
+    GUESS = GUESS.lower()
 # if user guesses duplicate letter, display previous attempts
     if GUESS in USERGUESS:
         print("\nLetter already been guessed!\nYou've tried:%s" % USERGUESS)
