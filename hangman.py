@@ -26,7 +26,7 @@ def hangman_visual(wrong):
         print("       |")
         print("       |")
         print("       |")
-        print (" -------")
+        print(" -------")
     elif wrong == 2:
         print(" _______")
         print("    |  |")
@@ -80,7 +80,7 @@ WORD = random.choice(WORDLIST)
 
 BLANKS = "_" * 5
 BLANKSLIST = list(BLANKS)
-print ("Guess the word: {:^5s}".format(' '.join(BLANKSLIST)))
+print("Guess the word: {:^5s}".format(' '.join(BLANKSLIST)))
 BLANKSLEFT = len(WORD)
 COUNT = 0
 WIN = False
@@ -109,7 +109,7 @@ while WIN is not True and LOSE is not True:
 # displaying hangman and progess of user
     COUNT += 1
     hangman_visual(NUMWRONG)
-    print ("{:^30s}".format(' '.join(BLANKSLIST)))
+    print("{:^30s}".format(' '.join(BLANKSLIST)))
     print("\n--------------------------------------------------------------\n")
     USERGUESS.append(GUESS)
 
